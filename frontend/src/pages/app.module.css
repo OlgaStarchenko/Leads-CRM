@@ -164,3 +164,16 @@ th {
   margin: 5px;
   padding: 4px;
 }
+.form__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.btn__save {
+  padding: 4px 15px;
+  margin: 5px;
+}
+.btn__cancel {
+  padding: 4px 15px;
+  margin: 5px;
+}
