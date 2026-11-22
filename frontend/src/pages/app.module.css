@@ -6,12 +6,11 @@
   margin: 10px;
   padding: 10px;
 
-  max-width: 600px;
-  min-width: 500px;
+  min-width: 600px;
 }
 .header__container {
   height: 50px;
-  width: 400px;
+
   margin-top: 10px;
   margin-left: 30px;
 
@@ -23,14 +22,17 @@
   font-size: 35px;
 }
 .header__title__h2 {
+  font-size: 20px;
 }
 .header__manager {
+  font-size: 20px;
 }
 .cards__container {
   display: flex;
   justify-content: start;
 
-  margin: 10px 0;
+  margin: 20px 0;
+  margin-bottom: 10px;
 }
 
 .card__all {
