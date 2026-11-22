@@ -43,9 +43,11 @@
   color: rgb(154, 148, 42);
   font-weight: bolder;
 }
-.card__new {
+.card__new,
+.new {
   margin: 0 10px;
   padding: 5px 10px;
+  white-space: nowrap;
 
   border-radius: 15px;
   background-color: rgb(201, 228, 247);
@@ -53,9 +55,11 @@
   color: rgb(0, 126, 253);
   font-weight: bolder;
 }
-.card__in__progress {
+.card__in__progress,
+.in_progress {
   margin: 0 10px;
   padding: 5px 10px;
+  white-space: nowrap;
 
   border-radius: 15px;
   background-color: rgb(243, 219, 211);
@@ -63,14 +67,27 @@
   color: rgb(116, 62, 44);
   font-weight: bolder;
 }
-.card__cancelled {
+.card__done,
+.done {
   margin: 0 10px;
   padding: 5px 10px;
+  white-space: nowrap;
 
   border-radius: 15px;
   background-color: rgb(204, 248, 220);
 
   color: rgb(13, 141, 60);
+  font-weight: bolder;
+}
+.canceled {
+  margin: 0 10px;
+  padding: 5px 10px;
+  white-space: nowrap;
+
+  border-radius: 15px;
+  background-color: rgb(224, 235, 228);
+
+  color: grey;
   font-weight: bolder;
 }
 .filters__container {
