@@ -1,10 +1,10 @@
 import { useState } from "react";
 import styles from "./app.module.css";
-import { Header } from "./../components/Header";
-import { Stats } from "./../components/Stats";
-import { Filters } from "./../components/Filters";
-import { LeadsTable } from "./../components/LeadsTable";
-import { LeadForm } from "./../components/LeadForm";
+import { Header } from "./../components/header/Header";
+import { Stats } from "./../components/stats/Stats";
+import { Filters } from "./../components/filters/Filters";
+import { LeadsTable } from "./../components/leadsTable/LeadsTable";
+import { LeadForm } from "./../components/leadForm/LeadForm";
 
 export function App() {
   const [leads, setLeads] = useState([

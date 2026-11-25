@@ -1,4 +1,4 @@
-import styles from "../pages/app.module.css";
+import styles from "../filters/filters.module.css";
 
 export function Filters() {
   return (

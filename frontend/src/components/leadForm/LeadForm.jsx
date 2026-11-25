@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../pages/app.module.css";
+import styles from "../leadForm/leadForm.module.css";
 
 export function LeadForm() {
   const [form, setForm] = useState({

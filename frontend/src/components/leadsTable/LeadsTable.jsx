@@ -1,4 +1,5 @@
-import { LeadRow } from "./LeadRow";
+// import styles from "../leadRow/leadRow.module.css";
+import { LeadRow } from "./../leadRow/LeadRow";
 
 export function LeadsTable({ leads }) {
   return (

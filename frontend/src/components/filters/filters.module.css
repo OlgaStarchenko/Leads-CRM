@@ -1,0 +1,15 @@
+.filters__container {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.btn__add {
+  padding: 4px 15px;
+}
+
+.filter__input {
+  padding: 4px;
+  background-color: #f2f2f2;
+}
+.filter__select {
+  margin: 0 30px;
+}

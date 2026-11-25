@@ -1,5 +1,5 @@
-import styles from "../pages/app.module.css";
-import { getStatusLabel } from "../utils/getStatusLabel";
+import styles from "../leadRow/leadRow.module.css";
+import { getStatusLabel } from "../../utils/getStatusLabel";
 
 export function LeadRow({ lead }) {
   return (

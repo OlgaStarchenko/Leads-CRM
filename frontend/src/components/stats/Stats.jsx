@@ -1,4 +1,4 @@
-import styles from "../pages/app.module.css";
+import styles from "../stats/stats.module.css";
 
 export function Stats() {
   return (

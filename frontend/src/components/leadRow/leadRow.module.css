@@ -1,0 +1,19 @@
+th,
+td {
+  border: 1px solid #ccc; /* Задаем сплошную серую рамку толщиной 1px */
+  padding: 10px; /* Добавляем внутренние отступы, чтобы текст не прилипал */
+  text-align: left; /* Выравниваем текст по левому краю */
+}
+
+th {
+  background-color: #f2f2f2; /* Выделяем шапку таблицы светло-серым фоном */
+  font-weight: bold; /* Делаем текст в шапке жирным */
+  text-align: center; /* Выравниваем текст по центру*/
+}
+.btn__edit {
+  margin: 5px 0;
+  padding: 3px;
+}
+.btn__delete {
+  padding: 3px;
+}
