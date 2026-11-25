@@ -48,14 +48,14 @@ export function App() {
   const [hasModalOpen, setHasModalOpen] = useState(false);
 
   function addLead(lead) {
-    setLeads(() => {
-      [...leads, lead];
-    });
-    return leads;
+    setLeads((prevLeads) => [...prevLeads, lead]);
+    closeModal();
   }
+
   function openModal() {
     setHasModalOpen(true);
   }
+
   function closeModal() {
     setHasModalOpen(false);
   }
