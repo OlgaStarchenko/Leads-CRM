@@ -1,6 +1,6 @@
 import styles from "../filters/filters.module.css";
 
-export function Filters() {
+export function Filters({ openModal }) {
   return (
     <div className={styles.filters__container}>
       <input className={styles.filter__input} placeholder="Поиск клиента..." />
@@ -11,7 +11,7 @@ export function Filters() {
         <option id="done">Выполнено</option>
         <option id="cancelled">Отменено</option>
       </select>
-      <button type="button" className={styles.btn__add}>
+      <button type="button" className={styles.btn__add} onClick={openModal}>
         + Новая заявка
       </button>
     </div>

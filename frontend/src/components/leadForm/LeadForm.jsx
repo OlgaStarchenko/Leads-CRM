@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../leadForm/leadForm.module.css";
 
-export function LeadForm() {
+export function LeadForm({ closeModal, addLead }) {
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -69,8 +69,12 @@ export function LeadForm() {
           value={form.comment}
           onChange={handleChange}
         />
-        <button className={styles.btn__save}>Сохранить</button>
-        <button className={styles.btn__cancel}>Отменить</button>
+        <button className={styles.btn__save} onClick={() => addLead(form)}>
+          Сохранить
+        </button>
+        <button className={styles.btn__cancel} onClick={closeModal}>
+          Отменить
+        </button>
       </div>
     </div>
   );

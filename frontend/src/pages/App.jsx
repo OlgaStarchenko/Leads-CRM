@@ -45,14 +45,28 @@ export function App() {
       created_at: "2026-11-14",
     },
   ]);
+  const [hasModalOpen, setHasModalOpen] = useState(false);
+
+  function addLead(lead) {
+    setLeads(() => {
+      [...leads, lead];
+    });
+    return leads;
+  }
+  function openModal() {
+    setHasModalOpen(true);
+  }
+  function closeModal() {
+    setHasModalOpen(false);
+  }
 
   return (
     <div className={styles.main__container}>
       <Header />
       <Stats />
-      <Filters />
+      <Filters openModal={openModal} />
       <LeadsTable leads={leads} />
-      <LeadForm />
+      {hasModalOpen && <LeadForm addLead={addLead} closeModal={closeModal} />}
     </div>
   );
 }
