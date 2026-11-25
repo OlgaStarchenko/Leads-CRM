@@ -12,7 +12,7 @@ export function LeadForm() {
   });
 
   function handleChange(event) {
-    const { name, value } = event;
+    const { name, value } = event.target;
     setForm({
       ...form,
       [name]: value,
