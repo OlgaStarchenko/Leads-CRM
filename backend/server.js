@@ -1,6 +1,7 @@
 //Запускает весь проект полностью на одном сервере.
 import express from "express";
 import { db, saveDatabase, query, run } from "./database.js";
+import cors from "cors";
 
 const app = express();
 //Создаем сервер
@@ -11,6 +12,8 @@ app.use(express.json());
 app.use(express.static("public"));
 //Указываем название папки в которой находится frontend часть приложения
 
+app.use(cors());
+//Включаем CORS-защиту сервера
 //Универсальная функция для преобразования SQL-ответа в массив с объектами.
 
 // app.get("/api/categories", (req, res) => {
