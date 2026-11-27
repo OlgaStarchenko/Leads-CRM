@@ -16,8 +16,7 @@
   color: rgb(154, 148, 42);
   font-weight: bolder;
 }
-.card__new,
-.new {
+.card__new {
   margin: 0 10px;
   padding: 5px 10px;
   white-space: nowrap;
@@ -28,8 +27,7 @@
   color: rgb(0, 126, 253);
   font-weight: bolder;
 }
-.card__in__progress,
-.in_progress {
+.card__in__progress {
   margin: 0 10px;
   padding: 5px 10px;
   white-space: nowrap;
@@ -40,8 +38,7 @@
   color: rgb(116, 62, 44);
   font-weight: bolder;
 }
-.card__done,
-.done {
+.card__done {
   margin: 0 10px;
   padding: 5px 10px;
   white-space: nowrap;
