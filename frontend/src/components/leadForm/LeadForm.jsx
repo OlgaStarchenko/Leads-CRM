@@ -19,6 +19,11 @@ export function LeadForm({ closeModal, addLead }) {
     });
   }
 
+  function handleSubmit() {
+    addLead(form);
+    closeModal();
+  }
+
   return (
     <div className={styles.open__modal}>
       <div className={styles.input__container}>
@@ -51,7 +56,7 @@ export function LeadForm({ closeModal, addLead }) {
           <option value={"new"}>Новая</option>
           <option value={"in_progress"}>В работе</option>
           <option value={"done"}>Завершена</option>
-          {/* <option value={"canceled"}>Отменена</option> */}
+          <option value={"canceled"}>Отменена</option>
         </select>
         <input
           className={styles.input__form}
@@ -69,7 +74,7 @@ export function LeadForm({ closeModal, addLead }) {
           value={form.comment}
           onChange={handleChange}
         />
-        <button className={styles.btn__save} onClick={() => addLead(form)}>
+        <button className={styles.btn__save} onClick={handleSubmit}>
           Сохранить
         </button>
         <button className={styles.btn__cancel} onClick={closeModal}>
